@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="logo">ACDC</div>
+  <button class="burger-menu" id="burgerMenu">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="menu" id="navMenu">
+    <a href="index.html" class="menu-link">Главная</a>
+    <a href="catalog.html" class="menu-link">Каталог</a>
+    <a href="about.html" class="menu-link">О нас</a>
+    <a href="contacts.html" class="menu-link">Контакты</a>
+    <a href="#" class="menu-link" id="cart-link">Корзина: <span id="cart-count">0</span></a>
+  </nav>
+</header>
+
+<div class="main-content"> 
+  <div class="product-card">
+    <img src="tv.png" alt="Телевизор" class="product-image">
+    <h2 class="title">65" (164 см) Телевизор Hisense 65U7S серый</h2>
+    <p class="price">79 999 ₽</p>
+    <button class="buy-btn" data-name="Телевизор Hisense" data-price="79999" id="buyButton">Купить</button>
+  </div>
+
+  <div class="calculator">
+    <h2>Калькулятор</h2>
+    <input type="text" id="calc-display" readonly>
+    <div class="calc-buttons">
+      <button>7</button> <button>8</button> <button>9</button> <button>/</button>
+      <button>4</button> <button>5</button> <button>6</button> <button>*</button>
+      <button>1</button> <button>2</button> <button>3</button> <button>-</button>
+      <button>0</button> <button>.</button> <button>=</button> <button>+</button>
+      <button class="clear-btn">C</button>
+    </div>
+  </div>
+
+  <div class="weather-widget">
+    <h2>Погода в Тамбове</h2>
+    <div id="weather-info">Загрузка данных...</div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <p>© 2024 ACDC Shop. Все права защищены.</p>
+  <div class="footer-links">
+    <a href="#">Политика конфиденциальности</a>
+    <a href="contacts.html">Связаться с нами</a>
+  </div>
+</footer>
+
+<div id="toast-container"></div>
+<script src="script.js"></script>
+</body>
+</html>

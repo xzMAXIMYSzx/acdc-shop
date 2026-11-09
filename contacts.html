@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">ACDC</div>
+    <button class="burger-menu" id="burgerMenu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="menu" id="navMenu">
+      <a href="index.html" class="menu-link">Главная</a>
+      <a href="catalog.html" class="menu-link">Каталог</a>
+      <a href="about.html" class="menu-link">О нас</a>
+      <a href="contacts.html" class="menu-link">Контакты</a>
+      <a href="#" class="menu-link" id="cart-link">Корзина: <span id="cart-count">0</span></a>
+    </nav>
+  </header>
+
+  <div class="main-content">
+    <div class="product-card" style="width: 600px; animation: none;">
+      <h2>Связаться с нами</h2>
+      <p>Если у вас есть вопросы, предложения или вы нашли баг на нашем сайте — напишите нам!</p>
+      
+      <form id="contactForm" style="text-align: left;" onsubmit="return false;">
+        <div style="margin-bottom: 10px;">
+          <label for="name">Ваше имя:</label><br>
+          <input type="text" id="name" style="width: 100%; padding: 8px; margin-top: 5px;">
+        </div>
+        <div style="margin-bottom: 10px;">
+          <label for="email">Email:</label><br>
+          <input type="text" id="email" style="width: 100%; padding: 8px; margin-top: 5px;">
+        </div>
+        <div style="margin-bottom: 15px;">
+          <label for="message">Сообщение:</label><br>
+          <textarea id="message" rows="4" style="width: 100%; padding: 8px; margin-top: 5px;"></textarea>
+        </div>
+        <button type="submit" class="buy-btn" style="width: 100%;">Отправить</button>
+      </form>
+      <div id="form-message" style="margin-top: 15px; font-weight: bold; text-align: center;"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>© 2024 ACDC Shop. Все права защищены.</p>
+    <div class="footer-links">
+      <a href="#">Политика конфиденциальности</a>
+      <a href="contacts.html">Связаться с нами</a>
+    </div>
+  </footer>
+  <div id="toast-container"></div>
+  <script src="script.js"></script>
+</body>
+</html>
